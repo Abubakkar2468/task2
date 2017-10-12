@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="en-US">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="btn" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">NG Pokedex</a>
+            </div>
+        </div>
+    </nav>
+    <div id="menu" class="displaycontent">
+        <div id="cancel" class="remove">&times;</div>
+        <ul>
+            <li>
+                <a href="#">Pokemon</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img" src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="Bulbasaur" class="img-responsive">
+                    <span class="name">Bulbasaur</span>
+                    <span class="rank">#01</span>
+                    <span class="meaning">bulb-a type of plant -saur-Greek suffix meaning ‘lizard’</span>
+                    <span class="attack">Attack-49</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/ivysaur.jpg" alt="Ivysaur" class="img-responsive">
+                    <span class="name">Ivysaur</span>
+                    <span class="rank">#02</span>
+                    <span class="meaning">ivy-a plant -saur-Greek suffix meaning ‘lizard’</span>
+                    <span class="attack">Attack-62</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img alt="venusaur" src="https://img.pokemondb.net/artwork/venusaur.jpg" class="img-responsive">
+                    <span class="name">Venusaur</span>
+                    <span class="rank">#03</span>
+                    <span class="meaning">venus from Venus Flytrap, a meat-eating plant -saur-Greek suffix meaning ‘lizard’</span>
+                    <span class="attack">Attack-100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/charmander.jpg" alt="Charmander" class="img-responsive">
+                    <span class="name">Charmander</span>
+                    <span class="rank">#04</span>
+                    <span class="meaning">char-to burn or singe salamander-lizard-like amphibian</span>
+                    <span class="attack">Attack-52</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/charmeleon.jpg" alt="Charmeleon" class="img-responsive">
+                    <span class="name">Charmeleon</span>
+                    <span class="rank">#05</span>
+                    <span class="meaning">char-to burn or singe chameleon-a species of lizard</span>
+                    <span class="attack">Attack-64</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/charizard.jpg" alt="Charizard" class="img-responsive">
+                    <span class="name">Charizard</span>
+                    <span class="rank">#06</span>
+                    <span class="meaning">char-to burn or singe lizard a reptile</span>
+                    <span class="attack">Attack-130</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/squirtle.jpg" alt="Squirtle" class="img-responsive">
+                    <span class="name">Squirtle</span>
+                    <span class="rank">#07</span>
+                    <span class="meaning">squirt-to shoot water squirrel-rodent with a bushy tail turtle-water-based reptile</span>
+                    <span class="attack">Attack-48</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/wartortle.jpg" alt="Wartortle" class="img-responsive">
+                    <span class="name">Wartortle</span>
+                    <span class="rank">#08</span>
+                    <span class="meaning">war-epic battle tortoise-large reptile with a protective shell turtle-water-based reptile</span>
+                    <span class="attack">Attack-63</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="Blastoise" class="img-responsive">
+                    <span class="name">Blastoise</span>
+                    <span class="rank">#09</span>
+                    <span class="meaning">blast-an explosion tortoise-large reptile with a protective shell</span>
+                    <span class="attack">Attack-103</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/caterpie.jpg" alt="Caterpie" class="img-responsive">
+                    <span class="name">Caterpie</span>
+                    <span class="rank">#10</span>
+                    <span class="meaning">caterpillar-an insect</span>
+                    <span class="attack">Attack-30</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/metapod.jpg" alt="Metapod" class="img-responsive">
+                    <span class="name">Metapod</span>
+                    <span class="rank">#11</span>
+                    <span class="meaning">metamorphosis-a transformation pod-a cocoon</span>
+                    <span class="attack">Attack-20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/butterfree.jpg" alt="Butterfree" class="img-responsive">
+                    <span class="name">Butterfree</span>
+                    <span class="rank">#12</span>
+                    <span class="meaning">butterfly-a flying insect free-without limit, now it’s able to fly</span>
+                    <span class="attack">Attack-45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/weedle.jpg" alt="Weedle" class="img-responsive">
+                    <span class="name">Weedle</span>
+                    <span class="rank">#13</span>
+                    <span class="meaning">worm-an invertebrate needle-sharp implement</span>
+                    <span class="attack">Attack-35</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/kakuna.jpg" alt="Kakuna" class="img-responsive">
+                    <span class="name">Kakuna</span>
+                    <span class="rank">#14</span>
+                    <span class="meaning">cocoon-a pupal casing made by some insects</span>
+                    <span class="attack">Attack-25</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/beedrill.jpg" alt="Beedrill" class="img-responsive">
+                    <span class="name">Beedrill</span>
+                    <span class="rank">#15</span>
+                    <span class="meaning">bee-a flying insect drill-pointed tool</span>
+                    <span class="attack">Attack-90</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/pidgey.jpg" alt="Pidgey" class="img-responsive">
+                    <span class="name">Pidgey</span>
+                    <span class="rank">#16</span>
+                    <span class="meaning">pigeon-a species of bird</span>
+                    <span class="attack">Attack-45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/pidgeotto.jpg" alt="Pidgeotto" class="img-responsive">
+                    <span class="name">Pidgeotto</span>
+                    <span class="rank">#17</span>
+                    <span class="meaning">pigeon-a species of bird</span>
+                    <span class="attack">Attack-60</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitle">Pokemon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cloae">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.pokemondb.net/artwork/pidgeot.jpg" alt="Pidgeot" class="img-responsive">
+                    <span class="name">Pidgeot</span>
+                    <span class="rank">#18</span>
+                    <span class="meaning">pigeon-a species of bird</span>
+                    <span class="attack">Attack-80</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <input type="search" name="search_pokemon" id="searchpokemon" onkeyup="findImg()" placeholder="Search">
+        </div>
+        <div class="row" id="girds">
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal">
+                    <div id="poke1" class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="Bulbasaur" class="img-responsive">
+                        <span class="name">Bulbasaur</span>
+                        <span class="rank">#01</span>
+                    </div>
+                </div>
+            </li>
+            <!-- <div id="displayimage" class="dispimg"><div></div></div> -->
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal1">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/ivysaur.jpg" alt="Ivysaur" class="img-responsive">
+                        <span class="name">Ivysaur</span>
+                        <span class="rank">#02</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3 " data-toggle="modal" data-target="#myModal2">
+                    <div class="gird thumbnail">
+                        <img alt="venusaur" src="https://img.pokemondb.net/artwork/venusaur.jpg" class="img-responsive">
+                        <span class="name">Venusaur</span>
+                        <span class="rank">#03</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal3">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/charmander.jpg" alt="Charmander" class="img-responsive">
+                        <span class="name">Charmander</span>
+                        <span class="rank">#04</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal4">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/charmeleon.jpg" alt="Charmeleon" class="img-responsive">
+                        <span class="name">Charmeleon</span>
+                        <span class="rank">#05</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal5">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/charizard.jpg" alt="Charizard" class="img-responsive">
+                        <span class="name">Charizard</span>
+                        <span class="rank">#06</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal6">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/squirtle.jpg" alt="Squirtle" class="img-responsive">
+                        <span class="name">Squirtle</span>
+                        <span class="rank">#07</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal7">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/wartortle.jpg" alt="Wartortle" class="img-responsive">
+                        <span class="name">Wartortle</span>
+                        <span class="rank">#08</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal8">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="Blastoise" class="img-responsive">
+                        <span class="name">Blastoise</span>
+                        <span class="rank">#09</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal9">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/caterpie.jpg" alt="Caterpie" class="img-responsive">
+                        <span class="name">Caterpie</span>
+                        <span class="rank">#10</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal10">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/metapod.jpg" alt="Metapod" class="img-responsive">
+                        <span class="name">Metapod</span>
+                        <span class="rank">#11</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal11">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/butterfree.jpg" alt="Butterfree" class="img-responsive">
+                        <span class="name">Butterfree</span>
+                        <span class="rank">#12</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal12">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/weedle.jpg" alt="Weedle" class="img-responsive">
+                        <span class="name">Weedle</span>
+                        <span class="rank">#13</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal13">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/kakuna.jpg" alt="Kakuna" class="img-responsive">
+                        <span class="name">Kakuna</span>
+                        <span class="rank">#14</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal14">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/beedrill.jpg" alt="Beedrill" class="img-responsive">
+                        <span class="name">Beedrill</span>
+                        <span class="rank">#15</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal15">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/pidgey.jpg" alt="Pidgey" class="img-responsive">
+                        <span class="name">Pidgey</span>
+                        <span class="rank">#16</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal16">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/pidgeotto.jpg" alt="Pidgeotto" class="img-responsive">
+                        <span class="name">Pidgeotto</span>
+                        <span class="rank">#17</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-md-2 col-sm-3" data-toggle="modal" data-target="#myModal17">
+                    <div class="gird thumbnail">
+                        <img src="https://img.pokemondb.net/artwork/pidgeot.jpg" alt="Pidgeot" class="img-responsive">
+                        <span class="name">Pidgeot</span>
+                        <span class="rank">#18</span>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var isSideBarOpen = true;
+        var isClick = true;
+        var imgName;
+        var buton = document.getElementById('btn');
+        var rem = document.getElementById('cancel');
+        // var pokey=document.getElementById('poke1');
+        // var pokemons=document.getElementById('p1');
+        (function () {
+            console.log(buton);
+        })();
+
+        function sideBar() {
+            console.log(isSideBarOpen);
+            if (!isSideBarOpen) {
+                document.getElementById("menu").setAttribute('class', 'displaycontent');
+            } else {
+                document.getElementById("menu").removeAttribute('class', 'displaycontent');
+            }
+            isSideBarOpen = isSideBarOpen ? false : true;
+            console.log(isSideBarOpen);
+        };
+        //  (function(){
+        //      console.log(pokey);
+        //  })();
+        //   function display(imgName)
+        //   {
+        //     var curimg=document.getElementById('p1');
+        //     var path='artwork/';
+        //     var source=path+curimg;
+        //     curimg.src=source;
+        //     curimg.alt=imgName;
+        //     curimg.title=imgName;
+
+        //  }
+        buton.addEventListener('click', sideBar);
+        rem.addEventListener('click', sideBar);
+        //  pokey.addEventListener('click',display);
+
+
+        function findImg() {
+            var find = document.getElementById('searchpokemon');
+            var items = document.getElementById('girds');
+            var lis = items.getElementsByTagName('li');
+            var filt = find.value.toUpperCase();
+
+            for (var i = 0; i < lis.length; i++) {
+
+                var a = lis[i].getElementsByClassName('name')[0];
+                if (a.innerHTML.toUpperCase().indexOf(filt) > -1) {
+                    lis[i].style.display = "";
+                } else {
+                    lis[i].style.display = "none";
+                }
+                console.log(a);
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

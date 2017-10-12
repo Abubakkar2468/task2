@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="en-US">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="task2wb.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" id="btn" class="navbar-toggle">
+                    <span id="bar" ></span>
+                    <span id="bar"></span>
+                    <span id="bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">NG Pokedex</a>
+            </div>
+        </div>
+    </nav>
+    <div id="menu" class="displaycontent">
+        <div id="cancel" class="remove">&times;</div>
+        <ul>
+            <li>
+                <a href="#">Pokemon</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <input type="search" name="search_pokemon" id="searchpokemon" onkeyup="findImg()" placeholder="Search">
+        </div>
+        <div class="row" id="girds">
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal">
+                    <div class="gird">
+                        <img id="img1"src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="Bulbasaur" class="img-responsive">
+                        <span class="name">Bulbasaur</span>
+                        <span class="rank">#01</span>
+                    </div>
+                </div>
+            </li>
+            <div id="displayimage" class="dispimg">
+                <div id="close" class="remove">&times;</div>
+                <img id="image" src="" >
+                <span id="nimg"></span>
+                <span id="rimg"></span>
+            </div> 
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal1">
+                    <div class="gird">
+                        <img id="img2"src="https://img.pokemondb.net/artwork/ivysaur.jpg" alt="Ivysaur" class="img-responsive">
+                        <span class="name">Ivysaur</span>
+                        <span class="rank">#02</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards " data-toggle="modal" id="myModal2">
+                    <div class="gird">
+                        <img id="img3"alt="venusaur" src="https://img.pokemondb.net/artwork/venusaur.jpg" class="img-responsive">
+                        <span class="name">Venusaur</span>
+                        <span class="rank">#03</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal3">
+                    <div class="gird">
+                        <img id="img4" src="https://img.pokemondb.net/artwork/charmander.jpg" alt="Charmander" class="img-responsive">
+                        <span class="name">Charmander</span>
+                        <span class="rank">#04</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal4">
+                    <div class="gird">
+                        <img id="img5" src="https://img.pokemondb.net/artwork/charmeleon.jpg" alt="Charmeleon" class="img-responsive">
+                        <span class="name">Charmeleon</span>
+                        <span class="rank">#05</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal5">
+                    <div class="gird">
+                        <img id="img6" src="https://img.pokemondb.net/artwork/charizard.jpg" alt="Charizard" class="img-responsive">
+                        <span class="name">Charizard</span>
+                        <span class="rank">#06</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal6">
+                    <div class="gird">
+                        <img id="img7" src="https://img.pokemondb.net/artwork/squirtle.jpg" alt="Squirtle" class="img-responsive">
+                        <span class="name">Squirtle</span>
+                        <span class="rank">#07</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal7">
+                    <div class="gird">
+                        <img id="img8" src="https://img.pokemondb.net/artwork/wartortle.jpg" alt="Wartortle" class="img-responsive">
+                        <span class="name">Wartortle</span>
+                        <span class="rank">#08</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal8">
+                    <div class="gird">
+                        <img id="img9" src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="Blastoise" class="img-responsive">
+                        <span class="name">Blastoise</span>
+                        <span class="rank">#09</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal9">
+                    <div class="gird">
+                        <img id="img10" src="https://img.pokemondb.net/artwork/caterpie.jpg" alt="Caterpie" class="img-responsive">
+                        <span class="name">Caterpie</span>
+                        <span class="rank">#10</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal10">
+                    <div class="gird">
+                        <img id="img11" src="https://img.pokemondb.net/artwork/metapod.jpg" alt="Metapod" class="img-responsive">
+                        <span class="name">Metapod</span>
+                        <span class="rank">#11</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal11">
+                    <div class="gird">
+                        <img id="img12" src="https://img.pokemondb.net/artwork/butterfree.jpg" alt="Butterfree" class="img-responsive">
+                        <span class="name">Butterfree</span>
+                        <span class="rank">#12</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal12">
+                    <div class="gird">
+                        <img id="img13" src="https://img.pokemondb.net/artwork/weedle.jpg" alt="Weedle" class="img-responsive">
+                        <span class="name">Weedle</span>
+                        <span class="rank">#13</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal13">
+                    <div class="gird">
+                        <img id="img14" src="https://img.pokemondb.net/artwork/kakuna.jpg" alt="Kakuna" class="img-responsive">
+                        <span class="name">Kakuna</span>
+                        <span class="rank">#14</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal14">
+                    <div class="gird">
+                        <img id="img15" src="https://img.pokemondb.net/artwork/beedrill.jpg" alt="Beedrill" class="img-responsive">
+                        <span class="name">Beedrill</span>
+                        <span class="rank">#15</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal15">
+                    <div class="gird">
+                        <img id="img16" src="https://img.pokemondb.net/artwork/pidgey.jpg" alt="Pidgey" class="img-responsive">
+                        <span class="name">Pidgey</span>
+                        <span class="rank">#16</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal16">
+                    <div class="gird">
+                        <img id="img17" src="https://img.pokemondb.net/artwork/pidgeotto.jpg" alt="Pidgeotto" class="img-responsive">
+                        <span class="name">Pidgeotto</span>
+                        <span class="rank">#17</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cards" data-toggle="modal" id="myModal17">
+                    <div class="gird">
+                        <img id="img18" src="https://img.pokemondb.net/artwork/pidgeot.jpg" alt="Pidgeot" class="img-responsive">
+                        <span class="name">Pidgeot</span>
+                        <span class="rank">#18</span>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </div>
+    <script>
+        var pokedata={
+            'myModal':{
+                imgsrc:"https://img.pokemondb.net/artwork/bulbasaur.jpg",
+                name:"bulbasaur",
+                rank:"#1"
+            },
+            'myModal1':{
+                imgsrc:"https://img.pokemondb.net/artwork/ivysaur.jpg",
+                name:"ivysaur",
+                rank:"#2"
+            },
+            'myModal2':{
+                imgsrc:"https://img.pokemondb.net/artwork/venusaur.jpg",
+                name:"venusaur",
+                rank:"#3"
+            },
+            'myModal3':{
+                imgsrc:"https://img.pokemondb.net/artwork/charmander.jpg",
+                name:"charmander",
+                rank:"#4"
+            },
+            'myModal4':{
+                imgsrc:"https://img.pokemondb.net/artwork/charmeleon.jpg",
+                name:"charmeleon",
+                rank:"#5"
+            },
+            'myModal5':{
+                imgsrc:"https://img.pokemondb.net/artwork/charizard.jpg",
+                name:"charizard",
+                rank:"#6"
+            },
+            'myModal6':{
+                imgsrc:"https://img.pokemondb.net/artwork/squirtle.jpg",
+                name:"squirtle",
+                rank:"#7"
+            },
+            'myModal7':{
+                imgsrc:"https://img.pokemondb.net/artwork/wartortle.jpg",
+                name:"wartortle",
+                rank:"#8"
+            },
+            'myModal8':{
+                imgsrc:"https://img.pokemondb.net/artwork/blastoise.jpg",
+                name:"blastoise",
+                rank:"#9"
+            },
+            'myModal9':{
+                imgsrc:"https://img.pokemondb.net/artwork/caterpie.jpg",
+                name:"caterpie",
+                rank:"#10"
+            },
+            'myModal10':{
+                imgsrc:"https://img.pokemondb.net/artwork/metapod.jpg",
+                name:"metapod",
+                rank:"#11"
+            },
+            'myModal11':{
+                imgsrc:"https://img.pokemondb.net/artwork/butterfree.jpg",
+                name:"butterfree",
+                rank:"#12"
+            },
+            'myModal12':{
+                imgsrc:"https://img.pokemondb.net/artwork/weedle.jpg",
+                name:"weedle",
+                rank:"#13"
+            },
+            'myModal13':{
+                imgsrc:"https://img.pokemondb.net/artwork/kakuna.jpg",
+                name:"kakuna",
+                rank:"#14"
+            },
+            'myModal14':{
+                imgsrc:"https://img.pokemondb.net/artwork/beedrill.jpg",
+                name:"beedrill",
+                rank:"#15"
+            },
+            'myModal15':{
+                imgsrc:"https://img.pokemondb.net/artwork/pidgey.jpg",
+                name:"pidgey",
+                rank:"#16"
+            },
+            'myModal16':{
+                imgsrc:"https://img.pokemondb.net/artwork/pidgeotto.jpg",
+                name:"pidgeotto",
+                rank:"#17"
+            },
+            'myModal17':{
+                imgsrc:"https://img.pokemondb.net/artwork/pidgeot.jpg",
+                name:"pidgeot",
+                rank:"#18"
+            },
+        };
+        var isSideBarOpen = true;
+        var isClick = true;
+        // var imgName;
+        var buton = document.getElementById('btn');
+        var rem = document.getElementById('cancel');
+        var disp=document.getElementsByClassName("cards");
+        // var lin=disp.getElementsByClassName("img-resposive");
+        var rem1=document.getElementById("close");
+        // var pokeimage=document.querySelector('li');
+        // var pokey=document.getElementById('poke1');
+        // var pokemons=document.getElementById('p1');
+        (function () {
+            console.log(buton);
+        })();
+        
+        function sideBar() {
+            console.log(isSideBarOpen);
+            if (!isSideBarOpen) {
+                document.getElementById("menu").setAttribute('class', 'displaycontent');
+            } else {
+                document.getElementById("menu").removeAttribute('class', 'displaycontent');
+            }
+            isSideBarOpen = isSideBarOpen ? false : true;
+            console.log(isSideBarOpen);
+        };
+        (function () {
+            console.log(disp);
+        })();
+          function display()
+           {
+            //  showData();
+            // console.log(pokedata);
+            //  console.log(this.id);
+            // console.log(isClick);
+            // showData(this.id);
+            if (!isClick) {
+                document.getElementById("displayimage").setAttribute('class', 'dispimg');
+            } else {
+                document.getElementById("displayimage").removeAttribute('class', 'dispimg');
+            }
+            isClick = isClick ? false : true;
+            
+            //  var curimg=document.getElementById('p1');
+            //  var path='artwork/';
+            //  var source=path+curimg;
+            //  curimg.src=source;
+            //  curimg.alt=imgName;
+            //  curimg.title=imgName;
+            var key=this.id;
+            console.log(key);
+            var obj=pokedata[key];
+            console.log(obj);
+            console.log(obj.imgsrc);
+            document.getElementById("image").src= obj.imgsrc;
+            document.getElementById("nimg").innerHTML=obj.name;
+            document.getElementById("rimg").innerHTML=obj.rank;
+          }
+        buton.addEventListener('click', sideBar);
+        rem.addEventListener('click', sideBar);
+        for (i = 0; i < disp.length; i++) {
+            disp[i].addEventListener('click', display);
+}
+rem1.addEventListener('click', display);
+        
+
+
+        function findImg() {
+            var find = document.getElementById('searchpokemon');
+            var items = document.getElementById('girds');
+            var lis=items.getElementsByTagName('li');
+            var filt=find.value.toUpperCase();
+
+            for(var i=0;i<lis.length;i++)
+            {
+
+                var a=lis[i].getElementsByClassName('name')[0];
+                if(a.innerHTML.toUpperCase().indexOf(filt)>-1)
+                {
+                    lis[i].style.display="";
+                }
+                else
+                {
+                    lis[i].style.display="none";
+                }
+                console.log(a);
+
+            }
+        }
+        // function showData(e)
+        // {
+        //     var key = this.id;
+        //     console.log(key);
+        //     var object = pokedata[key];
+        //     console.log(object);
+        //     document.getElementById('image').src=object[imgsrc];
+        //     console.log(object[imgsrc]);
+
+            
+        // }
+    </script>
+
+</body>
+
+</html>

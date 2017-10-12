@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.navbar-default
+{
+    background-color: rgb(230, 88, 95);
+}
+.navbar-toggle
+{
+    float: left;
+    display: block;
+}
+.navbar-brand
+{
+    margin-left: -19px;
+    color:white;
+}
+
+#menu {
+    height: 100%;
+    min-width: 25%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+div#menu:before {
+    content: ""; 
+    position: fixed;
+    background-color: rgba(44, 8, 8, 0.26);
+    height: 100%;
+    width: 75%;
+    right: 0;
+    z-index: 2;
+}
+
+.displaycontent {
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    padding: 10px;
+    margin: 1%;
+}
+
+#menu ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 1%;
+    font-size: 125%;
+    font-style: bold;
+}
+.remove {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3em;
+    font-size: 200%;
+    color: gray;
+    cursor: pointer;
+}
+
+#searchpokemon {
+    width: 98%;
+    height: 3em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.15em solid rgb(230, 88, 95);
+    margin: 1%;
+    outline: none;
+}
+
+.gird {
+    height: 15em;
+    background-color: white;
+    position: relative;
+    margin: 5%;
+}
+
+.gird .name {
+    position: absolute;
+    left: 5%;
+    bottom: 4%;
+}
+
+.gird .rank {
+    position: absolute;
+    right: 5%;
+    bottom: 4%;
+}
+.gird img {
+    width: 10em;
+    height: 10em;
+    margin-top: 2em;
+}
+.modal-body
+{
+    height: 100%;
+    width:100%;
+    display: block;
+}
+img
+{
+    width: 70%;
+    margin-left: 10%;
+}
+span
+{
+    display: block;
+}
+li{
+    list-style-type: none;
+}
+/* #displayimage {
+    height: 65%;
+    min-width: 70%;
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    z-index: 1;
+}
+div#displayimage:before {
+    /* content: "";  */
+    position: fixed;
+    /* background-color: rgba(44, 8, 8, 0.26); */
+    height: 100%;
+    width: 75%;
+    right: 0;
+    z-index: 2;*/
+/* } */ 
+
+@media screen and (max-width: 640px){
+    div#menu{
+        width:50%;
+    }
+    div#menu:before{
+        width:50%;
+    }
+}
